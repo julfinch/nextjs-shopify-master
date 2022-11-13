@@ -1,7 +1,7 @@
-# Jul Danreb Lactao Portfolio Website
+# Finch Fashion Ecommerce Website
   -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
 
-  -This website is a showcase portfolio that exhibits my web development skills in using React. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used Sass and to achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.
+  -Ecommerce website using Next.js as framework and Shoppify to handle the data for our products from our store and lastly using Builder.io for the frontend design.
   
 ## Table of contents
 
@@ -9,8 +9,6 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My Process](#process)
-  - [Install Dependencies](#dependencies)
-  - [Additional Info](#additional-info)
   - [Errors](#errors)
   - [Built With](#built-with)
 - [Author](#author)
@@ -49,89 +47,12 @@
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 
-### Install Dependencies
-
-```js
-"dependencies": {
-    "classnames": "^2.3.1",
-    "eslint": "^8.20.0",
-    "framer-motion": "^6.5.1",
-    "gatsby": "^4.19.2",
-    "gatsby-plugin-gatsby-cloud": "^4.19.0",
-    "gatsby-plugin-image": "^2.19.0",
-    "gatsby-plugin-less": "^6.19.0",
-    "gatsby-plugin-manifest": "^4.19.0",
-    "gatsby-plugin-offline": "^5.19.0",
-    "gatsby-plugin-react-helmet": "^5.19.0",
-    "gatsby-plugin-sass": "^5.19.0",
-    "gatsby-plugin-sharp": "^4.19.0",
-    "gatsby-source-filesystem": "^4.19.0",
-    "gatsby-transformer-sharp": "^4.19.0",
-    "gsap": "^3.10.4",
-    "less": "^4.1.3",
-    "less-loader": "^11.0.0",
-    "locomotive-scroll": "^4.1.4",
-    "prop-types": "^15.8.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.4.0",
-    "react-loadable": "^5.5.0",
-    "sass": "^1.54.0",
-    "sharp": "0.30.7",
-    "smooth-scrollbar": "^8.7.5"
-  },
-```
-
-### Additional Info
-
-**GATSBY-CONFIG.JS**
-```js
-	module.exports = {
-  /* Your site config here */
-  siteMetadata: {
-    title: `Jul Danreb Lactao`,
-    description: `React Portfolio Website of Jul Danreb Lactao`,
-  },
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`,
-      },
-    },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-    resolve: "gatsby-plugin-less",
-    options: {
-      javascriptEnabled: true,
-    },
-  },
-    `gatsby-plugin-less`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-less`,
-      options: {
-        loaderOptions: {
-          appendData: `@env: ${process.env.NODE_ENV};`,
-        },
-        javascriptEnabled: true,
-        modifyVars: {
-          "primary-color": "#00BFA6",
-        },
-      },
-    },
-  ],
-}
-```
 ---
 
 ### Errors
 
-1. 
+1.  **Package path not exported**
+
     ```shell
     Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './lib/tokenize' is not defined by "exports" in the package.json of a module in node_modules
     ```
@@ -139,7 +60,8 @@
 
     `([LINK:](https://stackoverflow.com/questions/69693907/error-err-package-path-not-exported-package-subpath-lib-tokenize-is-not-d))`
 
-1.  
+1.   **It Looks Like You're Trying To Use Typescript**
+
     ```shell
     Please install @types/react by running:
 
@@ -155,7 +77,8 @@
 
     `([LINK:](https://stackoverflow.com/questions/70106900/react-typescript-it-looks-like-youre-trying-to-use-typescript-but-do-not-have))`
 
-1. 
+1. **Digital envelope routines unsupported**
+
     ```shell
     node:internal/crypto/hash:67   this[kHandle] = new _Hash(algorithm, xofLen);                  
      ^  Error: error:0308010C:digital envelope routines::unsupported
@@ -169,11 +92,9 @@
 ### Built with
 
 - Semantic HTML5 markup
-- SASS
-- ReactJS
-- Gatsby
-- GSAP
-- Framer Motion
+- Tailwind
+- NextJS
+- Builder.io
 
 ---
  
